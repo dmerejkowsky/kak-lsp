@@ -808,9 +808,9 @@ map global lsp r '<esc>: lsp-references<ret>'             -docstring 'list symbo
 map global lsp s '<esc>: lsp-signature-help<ret>'         -docstring 'show function signature help'
 map global lsp S '<esc>: lsp-document-symbol<ret>'        -docstring 'list document symbols'
 map global lsp o '<esc>: lsp-workspace-symbol-incr<ret>'  -docstring 'search project symbols'
-map global lsp n '<esc>: lsp-find-error<ret>'             -docstring 'find next error'
-map global lsp p '<esc>: lsp-find-error --previous<ret>'  -docstring 'find previous error'
 map global lsp <&> '<esc>: lsp-highlight-references<ret>' -docstring 'lsp-highlight-references'
+map global lsp n '<esc>: lsp-find-error --include-warnings <ret>'            -docstring 'find next error or warning'
+map global lsp p '<esc>: lsp-find-error --include-warnings --previous<ret>'  -docstring 'find previous error or warning'
 
 ### Default integration ###
 
